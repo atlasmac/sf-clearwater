@@ -5,7 +5,7 @@ const siteName = "SF Clearwater at Stites";
 import dayjs from "dayjs";
 import { prisma } from "../server/db";
 
-export default async function fetchMissoula() {
+export default async function fetchSF() {
   // const writeFile = promisify(fs.writeFile);
 
   const res = await fetch(
@@ -102,4 +102,4 @@ export default async function fetchMissoula() {
   return data;
 }
 
-(async () => await fetchMissoula())();
+(async () => await fetchSF())();
