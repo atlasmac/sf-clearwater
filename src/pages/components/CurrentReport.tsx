@@ -11,8 +11,6 @@ interface props {
 }
 
 const CurrentReport = ({ level, spot }: props) => {
-  const [isFavorite, setIsFavorite] = useState<boolean>();
-
   const currentLevel = level?.cfs;
   const currentFeet = level?.ft;
   const time = level?.date;
@@ -29,8 +27,11 @@ const CurrentReport = ({ level, spot }: props) => {
         /> */}
         <div className="flex flex-col items-center lg:items-start">
           <h1 className=" font-robotoSlab py-3 text-center text-5xl font-bold sm:text-left">
-            {spot}
+            Steel Report
           </h1>
+          <h2 className=" font-robotoSlab py-3 text-center text-5xl font-bold sm:text-left">
+            {spot}
+          </h2>
 
           <p className="max-w-80 py-3 text-3xl">
             <a

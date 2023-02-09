@@ -1,6 +1,5 @@
 import { Parser } from "xml2js";
 import fetch from "node-fetch";
-import fs from "fs";
 const siteId = "13338500";
 const siteName = "SF Clearwater at Stites";
 import dayjs from "dayjs";

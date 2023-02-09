@@ -1,15 +1,11 @@
 import React from "react";
-import { useRouter } from "next/router";
-import { Observation } from "./LineChart";
+import type { Observation } from "./LineChart";
 
 interface Props {
   forecastData: Observation;
 }
 
 const ForecastTable = ({ forecastData }: Props) => {
-  const router = useRouter();
-  const siteId: string = router.query.id?.toString() || "";
-
   const headers: any[] = [];
   const flows: any[] = [];
   const height: any[] = [];
