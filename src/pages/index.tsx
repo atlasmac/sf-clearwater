@@ -1,10 +1,10 @@
 import Head from "next/head";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
-import LineChart from "./components/LineChart";
-import CurrentReport from "./components/CurrentReport";
-import ForecastTable from "./components/ForecastTable";
-import LoadingFull from "./components/LoadingFull";
+import LineChart from "../components/LineChart";
+import CurrentReport from "../components/CurrentReport";
+import ForecastTable from "../components/ForecastTable";
+import LoadingFull from "../components/LoadingFull";
 dayjs.extend(utc);
 
 import { api } from "../utils/api";
