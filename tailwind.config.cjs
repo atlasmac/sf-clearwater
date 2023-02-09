@@ -1,10 +1,6 @@
-// @ts-nocheck
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
   daisyui: {
     styled: true,
     themes: ["dark"],
@@ -15,5 +11,7 @@ module.exports = {
     prefix: "",
     darkTheme: "dark",
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+  ]
 };

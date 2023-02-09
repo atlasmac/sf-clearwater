@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { BiMap } from "react-icons/bi";
 
 interface props {
-  level: {
-    date: string;
-    cfs: number;
-    ft: number;
-  };
+  level:
+    | {
+        date: string;
+        cfs: number;
+        ft: number;
+      }
+    | undefined;
   spot: string;
 }
 

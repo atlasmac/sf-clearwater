@@ -72,13 +72,13 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="container mx-auto min-h-screen">
-        <CurrentReport spot={siteName} level={lastObserved[0]!} />
+        <CurrentReport spot={siteName} level={lastObserved[0]} />
         <LineChart
           forecastData={forecastData}
           observedData={observedData}
           lastObserved={lastObserved}
         />
-        <ForecastTable forecastData={forecastTableData} />
+        {/* <ForecastTable forecastData={forecastTableData} /> */}
       </main>
     </>
   );
