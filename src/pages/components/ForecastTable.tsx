@@ -6,11 +6,11 @@ interface Props {
 }
 
 const ForecastTable = ({ forecastData }: Props) => {
-  const headers: any[] = [];
-  const flows: any[] = [];
-  const height: any[] = [];
+  const headers: React.ReactNode[] = [];
+  const flows: React.ReactNode[] = [];
+  const height: React.ReactNode[] = [];
 
-  forecastData.forEach((data) => {
+  const fe = forecastData.forEach((data) => {
     headers.push(<td key={data.date}>{data.date.split(" ")[0]}</td>);
     flows.push(<td key={data.date}>{data.cfs}</td>);
     height.push(<td key={data.date}>{data.ft}</td>);
