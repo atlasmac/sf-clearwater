@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import LineChart from "./components/LineChart";

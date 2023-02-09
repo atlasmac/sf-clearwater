@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BiMap } from "react-icons/bi";
 
 interface props {
